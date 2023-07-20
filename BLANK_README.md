@@ -18,13 +18,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
@@ -68,13 +61,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -101,97 +91,50 @@ Specifically we asked:
   </a>
 
 <h3 align="left">Figure 1</h3>
-(a)Three scaling scenarios for the log–log relationship between leaf conduit double wall thickness (T) and lumen diameter (D): slope >1 (yellow area)- conduits grow thicker than wider, resulting in greater xylem reinforcement and lower vulnerability to implosion in wider conduits; slope = 1 (green area)- conduits diameter and thickness grow proportionally, resulting in a constant safety implosion across vein sizes; and slope < 1 (orange area)-  conduits grow wider than thicker, resulting in greater xylem reinforcement in smaller conduits, but higher vulnerability to implosion in wider conduits. Slope may slightly depart from 1 in some species, creating an optimal range of scaling factors within boundary conditions set by biophysical and physiological constraints. (b) Illustrations of how conduits T and D are expected to vary across vein sizes in each of the three scaling scenarios. (c) Functional (normal) and dysfunctional (cavitated and collapsed) leaf conduits. Cavitation occurs when air bubbles form and expand inside the conduits blocking the water flow. Collapse or implosion occurs when radial (force orientated towards the conduit center) or hoop (force exerted around the conduit circumference) forces (indicated by the gray arrows) create mechanical stress that exceeds the wall strength, so that the wall implose (buckles inwards).
+(a) Three scaling scenarios for the log–log relationship between leaf conduit double wall thickness (T) and lumen diameter (D): slope >1 (yellow area)- conduits grow thicker than wider, resulting in greater xylem reinforcement and lower vulnerability to implosion in wider conduits; slope = 1 (green area)- conduits diameter and thickness grow proportionally, resulting in a constant safety implosion across vein sizes; and slope < 1 (orange area)-  conduits grow wider than thicker, resulting in greater xylem reinforcement in smaller conduits, but higher vulnerability to implosion in wider conduits. Slope may slightly depart from 1 in some species, creating an optimal range of scaling factors within boundary conditions set by biophysical and physiological constraints. (b) Illustrations of how conduits T and D are expected to vary across vein sizes in each of the three scaling scenarios. (c) Functional (normal) and dysfunctional (cavitated and collapsed) leaf conduits. Cavitation occurs when air bubbles form and expand inside the conduits blocking the water flow. Collapse or implosion occurs when radial (force orientated towards the conduit center) or hoop (force exerted around the conduit circumference) forces (indicated by the gray arrows) create mechanical stress that exceeds the wall strength, so that the wall implose (buckles inwards).
 
 <p align="left">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- STATISTICAL ANALYSIS -->
 ## Statistical analysis
-Analysis
+
+To test if T and D scale isometrically (i.e. slope =1; Question 1), we log10-transformed both variables and then used the SMATR R package (version 3, Warton et al., 2011) to fit standardized major axis (SMA) regression models. Then, we used the function sma( log10(T) ~ log10(D), slope.test = 1) to test if the regression slope was significantly different from one. We also used SMA regressions to investigate whether the slopes of the T x D relationship differed across groups (sma ( log10(T) ~ log10(D) * groups)), i.e. across species, clades, habitats, growth forms, and vein orders (Question 2). For each SMA model, we checked the assumptions of normality and homoscedasticity of the residuals. Additionally, we performed Kruskal wallis tests followed by pairwise Wilcox tests with Benjamini & Hochberg (1995) p-value adjustment method to test for differences in the anatomical traits (i.e. conduit diameter, thickness, implosion safety and critical implosion pressure) across those groups. 
+
+To investigate possible trade-offs among leaf functional traits (Question 3), we used two complementary approaches. First, we carried out a principal component analysis (PCA) using the ‘prcomp’ function in R. Prior to the PCA, we z-transformed all traits to both improve comparability among them and reduce bias towards traits with higher variance. We used the Broken Stick method for estimating the number of statistically significant principal components to be retained. Our PCA analysis was carried out with 108 out of the 122 studied species, as we removed the 14 species with missing data for ε. Second, we run simple least-squares regression models to test for pairwise trade-offs between implosion safety (response variable) and the other leaf traits (predictor variables). We also regressed Pcri1 and Pcr2 values to assess the relationship between the two different mechanical models of conduit collapse used in this study. All analyses were carried out using the R programming environment 4.3.1 (R Foundation for Statistical Computing 2023). Regressions or differences were considered to be significant if P < 0.05.
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You will need R version 4.3.1 (or greater) and the following R-packages installed and loaded in your computer to run the Rcode to reproduce the analysis of this project
-
 ### Prerequisites
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You will need R version 4.3.1 (or greater) and the following R-packages installed and loaded in your computer to run the Rcode to reproduce the analysis of this project
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/ilamatos/xylem_implosion_safety.git
    ```
-3. Install NPM packages
+2. Install the necessary R-packages
    ```sh
-   npm install
+   install.packages(c("ggpubr", "viridis", "BIEN", "maps", "mapdata", "raster", "sp", "smatr", "vegan", "tidyverse", "readxl", "hrbrthemes", "hexbin"))
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   Some packages may need to be installed from the source
+   
+    ```sh
+   # installing V.PhyloMaker 2 
+   library(devtools)
+   devtools::install_github("jinyizju/V.PhyloMaker2")
+
+   # installing and loading ggtree
+   install.packages("BiocManager", repos = "https://cloud.r-project.org")
+   library(BiocManager)
+   BiocManager::install("ggtree")
+    
    ```
+4. Run the R-script "xylem_implosion_safety_v3.R"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/ilamatos/xylem_implosion_safety/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -202,10 +145,8 @@ Project Link: [https://github.com/ilamatos/xylem_implosion_safety](https://githu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- REFERENCES -->
+## References
 
 * []()
 * []()
