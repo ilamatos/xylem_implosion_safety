@@ -57,7 +57,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project"> Abstract</a>
+      <a href="#about-the-project">About the project </a>
       </ul>
     </li>
       <a href="#getting-started">Getting Started</a>
@@ -77,10 +77,22 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+Vascular plants developed lignified conduits (tracheids and vessel elements) in the xylem tissue to transport water with relatively high efficiency (Sperry 2003). Because of the extreme negative pressures experienced in the xylem, these conduits are under risk of dysfunction (Figure 1a) either by cavitation (i.e. the collapse of water columns due to formation and expansion of air bubbles) or by implosion (i.e. the collapse of conduit walls due to compression forces) (Sperry and Hacke 2004, Hacke et al 2004). For a long time, physiological work on xylem dysfunction has focused on cavitation as the main process responsible for reduced hydraulic efficiency in plants under drought, while much less is know about the leaf xylem safety against implosion (Zhang et al 2023).
+To a first approximation, conduit safety against implosion is proportional to the ratio between double-wall thickness (T in Figure 1) and maximum lumen diameter (D), i.e. T/D (also called ‘‘thickness-to-span’’ ratio, Hacke et al., 2001; Sperry et al 2006). Thus, implosion safety can theoretically be increased either by having narrower conduits or by having thicker conduits (Jacobson et al 2005, Pittermann et al 2016). Either way (narrowing or thickening conduits) may result in functional disadvantages for the plant (Blackman et al 2010; Pratt and Jacobsen 2017, Pittermann et al 2016): narrowing conduits results in decreased flow efficiency (Sperry et al 2006), whereas thickening conduits results in increased construction cost (Niklas 1992, Brodribb and Holbrook 2005).
+Therefore, plants may need to trade-off implosion safety  versus maximum efficiency at a minimum construction cost. Assuming linear trade-offs between those different leaf functions, we could expect leaves to scale T proportionally to D in order to achieve a level of conduit reinforcement (T/D) that is “just right” given the risk of failure relative to the fixed cost of construction (Blackman et al 2018; Hacke et al 2001; Escheverria et al 2022). That is, the relationship between log (T) vs. log (D) should have an allometric slope close to 1 (isometric growth) (Figure 1). If thickening occurs too fast (slope >1 = positive allometry), conduits might be more safe against implosion and also mechanically stronger, but they are also more costly to produce and less efficient in conducting water. If widening occurs too fast (slope <1 = negative allometry), conduits might be less costly to produce and more efficient in conducting water, but at the expense of being potentially more vulnerable to implosion and less mechanically reinforced.  
+Species growing under different selective pressures may prioritize different leaf functions, so we should expect some developmental variation in the T x D scaling slopes across plant phylogeny (i.e. slope may depart from 1 in some species), creating an optimal range of scaling factors within boundary conditions set by biophysical and physiological constraints (Figure 1). For example, species growing in dry habitats experience more xylem tension (more negative water potentials) and are likely under higher selection pressure for developing safer vessels (thicker and/or narrower conduits) compared to species in wet environments (Blackman et al 2018). Similarly, xylem tension increases from the petiole to the minor veins, so we could expect a variation in implosion safety across vein orders.
+This research project investigates leaf xylem implosion safety on a phylogenetically diverse set of 122 ferns and angiosperms species with different habitats and growth forms. For each species, we also measured traits describing leaf mechanical support, hydraulic efficiency and construction cost and tested for potential trade-offs between leaf functions. 
+Specifically we asked: 
+- (Q1) Do leaf conduits’ double cell wall thickness (T) and lumen maximum diameter (D) scale to each other isometrically (i.e. slope = 1)? 
+- (Q2) How does the slope of the T vs. D scaling varies across species and clades, habitat (arid, mesic, hydric), growth forms (aquatic, herb, climbing, tree, shrub), and vein orders (major, medium, minor)?
+- (Q3) Is there a multiple trade-off between implosion safety, mechanical support, hydraulic efficiency and construction cost?
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-xxxxxxxxxxx
-Here's a blank template to get started: To avoid retyping too much info.
+<!-- FIGURE 1 -->
+<br />
+<div align="center">
+  <a href="https://github.com/ilamatos/xylem_implosion_safety">
+    <img src="figures/macrosystems_logo_long (1).png" alt="Logo" width="190" height="80">
+  </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
