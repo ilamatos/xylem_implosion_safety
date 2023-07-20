@@ -58,9 +58,9 @@
     <li>
       <a href="#about-the-project">About the project </a>
       </ul>
-    </li>
+    <li>
       <a href="#statistical-analysis">Statistical Analysis</a>
-      <ul>
+    </ul>
     </li>
       <a href="#getting-started">Getting Started</a>
       <ul>
