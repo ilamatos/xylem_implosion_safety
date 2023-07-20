@@ -1,0 +1,123 @@
+spp_code,Species_WP,Species2,Genus_WP,Family_WP,order_apg4,clade,clade2,clade3
+Abe_mex,Abelia mexicana,Abelia mexicana,Abelia,Caprifoliaceae,Dipsacales,asterids,asterids,angiosperm
+Aex_pun,Aextoxicon punctatum,Aextoxicon punctatum,Aextoxicon,Aextoxicaceae,Berberidopsidales,rosids,rosids,angiosperm
+Ale_cor,Alectryon coriaceus,Alectryon coriaceus,Alectryon,Sapindaceae,Sapindales,rosids,rosids,angiosperm
+Als_lig,Alstroemeria ligtu,Alstroemeria ligtu,Alstroemeria,Alstroemeriaceae,Liliales,monocots,monocots,angiosperm
+Ane_cal,Anemopsis californica,Anemopsis californica,Anemopsis,Saururaceae,Piperales,basal angiosperms,magnoliids,angiosperm
+Arg_spi,Argania spinosa,Argania spinosa,Argania,Sapotaceae,Ericales,asterids,asterids,angiosperm
+Ari_bae,Aristolochia baetica,Aristolochia baetica,Aristolochia,Aristolochiaceae,Piperales,basal angiosperms,magnoliids,angiosperm
+Asi_tri,Asimina triloba,Asimina triloba,Asimina,Annonaceae,Magnoliales,basal angiosperms,magnoliids,angiosperm
+Asp_obl,Asplenium oblongifolium,Asplenium oblongifolium,Asplenium,Aspleniaceae,Polypodiales,ferns,ferns,fern
+Ast_ban,Astelia banksii,Astelia banksii,Astelia,Asteliaceae,Asparagales,monocots,monocots,angiosperm
+Auc_jap,Aucuba japonica,Aucuba japonica,Aucuba,Garryaceae,Garryales,asterids,asterids,angiosperm
+Bar_pur,Barbacenia purpurea,Barbacenia purpurea,Barbacenia,Velloziaceae,Pandanales,monocots,monocots,angiosperm
+Beg_for,Begonia formosa,Begonia formosa,Begonia,Begoniaceae,Cucurbitales,rosids,rosids,angiosperm
+Bei_tar,Beilschmiedia tarairi,Beilschmiedia tarairi,Beilschmiedia,Lauraceae,Laurales,basal angiosperms,magnoliids,angiosperm
+Bux_har,Buxus harlandii,Buxus harlandii,Buxus,Buxaceae,Buxales,basal eudicots,basal eudicots,angiosperm
+Cal_nut,Deyeuxia nutkaensis,Calamagrostis nutkaensis ,Deyeuxia,Poaceae,Poales,monocots,monocots,angiosperm
+Cal_pan,Ackama paniculosa,Ackama paniculosa,Ackama,Cunoniaceae,Oxalidales,rosids,rosids,angiosperm
+Cam_sin,Camellia sinensis,Camellia sinensis,Camellia,Theaceae,Ericales,asterids,asterids,angiosperm
+Can_can,Canarina canariensis,Canarina canariensis,Canarina,Campanulaceae,Asterales,asterids,asterids,angiosperm
+Car_pal,Carya palmeri,Carya palmeri,Carya,Juglandaceae,Fagales,rosids,rosids,angiosperm
+Car_pen,Carex agastachys,Carex agastachys,Carex,Cyperaceae,Poales,monocots,monocots,angiosperm
+Cat_edu,Catha edulis,Catha edulis,Catha,Celastraceae,Celastrales,rosids,rosids,angiosperm
+Cel_aus,Celtis australis,Celtis australis,Celtis,Cannabaceae,Rosales,rosids,rosids,angiosperm
+Cel_ten,Celtis tenuifolia,Celtis tenuifolia,Celtis,Cannabaceae,Rosales,rosids,rosids,angiosperm
+Chi_nit,Chimonanthus nitens,Chimonanthus nitens,Chimonanthus,Calycanthaceae,Laurales,basal angiosperms,magnoliids,angiosperm
+Chl_spi,Chloranthus spicatus,Chloranthus spicatus,Chloranthus,Chloranthaceae,Chloranthales,basal angiosperms,anita,angiosperm
+Cis_ant,Cissus antarctica,Cissus antarctica,Cissus,Vitaceae,Vitales,rosids,rosids,angiosperm
+Cis_pop,Cistus populifolius,Cistus populifolius,Cistus,Cistaceae,Malvales,rosids,rosids,angiosperm
+Cit_mon,Citharexylum montevidense,Citharexylum montevidense,Citharexylum,Verbenaceae,Lamiales,asterids,asterids,angiosperm
+Clu_ala,Clusia alata,Clusia alata,Clusia,Clusiaceae,Malpighiales,rosids,rosids,angiosperm
+Cne_tri,Cneorum tricoccon,Cneorum tricoccon,Cneorum,Rutaceae,Sapindales,rosids,rosids,angiosperm
+Com_ery,Combretum erythrophyllum,Combretum erythrophyllum,Combretum,Combretaceae,Myrtales,rosids,rosids,angiosperm
+Com_umb,Comandra umbellata,Comandra umbellata,Comandra,Comandraceae,Santalales,rosids,rosids,angiosperm
+Cor_bud,Corokia buddleioides,Corokia buddleioides,Corokia,Argophyllaceae,Asterales,asterids,asterids,angiosperm
+Cor_lae,Corynocarpus laevigata,Corynocarpus laevigatus,Corynocarpus,Corynocarpaceae,Cucurbitales,rosids,rosids,angiosperm
+Cos_tap,Costus tappenbeckianus,Costus tappenbeckianus,Costus,Costaceae,Zingiberales,monocots,monocots,angiosperm
+Cri_pat,Crinodendron patagua,Crinodendron patagua,Crinodendron,Elaeocarpaceae,Oxalidales,rosids,rosids,angiosperm
+Cup_nud,Cuphea nudicostata,Cuphea nudicostata,Cuphea,Lythraceae,Myrtales,rosids,rosids,angiosperm
+Cus_spi,Cussonia spicata,Cussonia spicata,Cussonia,Araliaceae,Apiales,asterids,asterids,angiosperm
+Cya_ful,Cyathea fulva,Cyathea fulva,Cyathea,Cyatheaceae,Cyatheales,ferns,ferns,fern
+Cyc_bip,Cyclanthus bipartitus,Cyclanthus bipartitus,Cyclanthus,Cyclanthaceae,Pandanales,monocots,monocots,angiosperm
+Dap_him,Daphniphyllum himalayense,Daphniphyllum himalayense,Daphniphyllum,Daphniphyllaceae,Saxifragales,basal eudicots,basal eudicots,angiosperm
+Del_fis,Delphinium fissum,Delphinium fissum,Delphinium,Ranunculaceae,Ranunculales,basal eudicots,basal eudicots,angiosperm
+Des_spi,Desfontainia spinosa,Desfontainia spinosa,Desfontainia,Columelliaceae,Bruniales,asterids,asterids,angiosperm
+Dic_ant,Dicksonia antarctica,Dicksonia antarctica,Dicksonia,Dicksoniaceae,Cyatheales,ferns,ferns,fern
+Dic_feb,Hydrangea febrifuga,Hydrangea febrifuga,Hydrangea,Hydrangeaceae,Cornales,asterids,asterids,angiosperm
+Dic_squ,Dicksonia squarrosa,Dicksonia squarrosa,Dicksonia,Dicksoniaceae,Cyatheales,ferns,ferns,fern
+Dio_lyc,Diospyros lycioides,Diospyros lycioides,Diospyros,Ebenaceae,Ericales,asterids,asterids,angiosperm
+Dio_pol,Dioscorea oppositifolia,Dioscorea polystachya,Dioscorea,Dioscoreaceae,Dioscoreales,monocots,monocots,angiosperm
+Dip_esc,Diplazium esculentum,Diplazium esculentum,Diplazium,Athyriaceae,Polypodiales,ferns,ferns,fern
+Dir_occ,Dirca occidentalis,Dirca occidentalis,Dirca,Thymelaeaceae,Malvales,rosids,rosids,angiosperm
+Doo_asp,Doodia aspera,Doodia aspera,Doodia,Blechnaceae,Polypodiales,ferns,ferns,fern
+Dry_rem,Dryopteris ramosa,Dryopteris ramosa,Dryopteris,Dryopteridaceae,Polypodiales,ferns,ferns,fern
+Ehr_acu,Ehretia acuminata,Ehretia acuminata,Ehretia,Boraginaceae,Boraginales,asterids,asterids,angiosperm
+Equ_tel,Equisetum telmateia,Equisetum telmateia,Equisetum,Equisetaceae,Equisetales,ferns,ferns,fern
+Esc_her,Escallonia herrerae,Escallonia herrerae,Escallonia,Escalloniaceae,Escalloniales,asterids,asterids,angiosperm
+Euc_cri,Euclea crispa,Euclea crispa,Euclea,Ebenaceae,Ericales,asterids,asterids,angiosperm
+Eur_jap,Eurya japonica,Eurya japonica,Eurya,Pentaphylacaceae,Ericales,asterids,asterids,angiosperm
+Eus_jap,Staphylea japonica,Staphylea japonica,Staphylea,Staphyleaceae,Crossosomatales,rosids,rosids,angiosperm
+Fra_son,Francoa appendiculata,Francoa appendiculata,Francoa,Francoaceae,Geraniales,rosids,rosids,angiosperm
+Gom_keu,Gomortega keule,Gomortega keule,Gomortega,Gomortegaceae,Laurales,basal angiosperms,magnoliids,angiosperm
+Hel_chi,Helwingia chinensis,Helwingia chinensis,Helwingia,Helwingiaceae,Aquifoliales,asterids,asterids,angiosperm
+Hib_sca,Hibbertia scandens,Hibbertia scandens,Hibbertia,Dilleniaceae,Dilleniales,rosids,rosids,angiosperm
+Ill_lan,Illicium lanceolatum,Illicium lanceolatum,Illicium,Schisandraceae,Austrobaileyales,basal angiosperms,anita,angiosperm
+Ite_ili,Itea ilicifolia,Itea ilicifolia,Itea,Iteaceae,Saxifragales,basal eudicots,basal eudicots,angiosperm
+Kni_uva,Kniphofia uvaria,Kniphofia uvaria,Kniphofia,Asphodelaceae,Asparagales,monocots,monocots,angiosperm
+Lon_jap,Lonicera japonica,Lonicera japonica,Lonicera,Caprifoliaceae,Dipsacales,asterids,asterids,angiosperm
+Luz_niv,Luzula nivea,Luzula nivea,Luzula,Juncaceae,Poales,monocots,monocots,angiosperm
+Mag_che,Magnolia chevalieri,Magnolia chevalieri,Magnolia,Magnoliaceae,Magnoliales,basal angiosperms,magnoliids,angiosperm
+Mal_pal,Malacothamnus palmeri,Malacothamnus palmeri,Malacothamnus,Malvaceae,Malvales,rosids,rosids,angiosperm
+Mel_maj,Melianthus major,Melianthus major,Melianthus,Francoaceae,Geraniales,rosids,rosids,angiosperm
+Met_dav,Metapanax davidii,Metapanax davidii,Metapanax,Araliaceae,Apiales,asterids,asterids,angiosperm
+Mic_mul,Miconia multiplinervia,Miconia multiplinervia,Miconia,Melastomataceae,Myrtales,rosids,rosids,angiosperm
+Mic_pla,Microlepia platyphylla,Microlepia platyphylla,Microlepia,Dennstaedtiaceae,Polypodiales,ferns,ferns,fern
+Mon_car,Montinia caryophyllacea,Montinia caryophyllacea,Montinia,Montiniaceae,Solanales,asterids,asterids,angiosperm
+Myr_rub,Morella rubra,Myrica rubra,Morella,Myricaceae,Fagales,rosids,rosids,angiosperm
+Nan_dom,Nandina domestica,Nandina domestica,Nandina,Berberidaceae,Ranunculales,basal eudicots,basal eudicots,angiosperm
+Not_fus,Fuscospora fusca,Nothofagus fusca,Fuscospora,Nothofagaceae,Fagales,rosids,rosids,angiosperm
+Nym,Nymphaea sp,Nymphaea sp,Nymphaea,Nymphaeaceae,Nymphaeales,basal angiosperms,anita,angiosperm
+Ole_eur,Olea europaea,Olea europaea,Olea,Oleaceae,Lamiales,asterids,asterids,angiosperm
+Ono_sen,Onoclea sensibilis,Onoclea sensibilis,Onoclea,Onocleaceae,Polypodiales,ferns,ferns,fern
+Osm_ber,Osmorhiza berteroi,Osmorhiza berteroi,Osmorhiza,Apiaceae,Apiales,asterids,asterids,angiosperm
+Pae_bro,Paeonia broteroi,Paeonia broteri,Paeonia,Paeoniaceae,Saxifragales,basal eudicots,basal eudicots,angiosperm
+Par_tor,Parajubaea torallyi,Parajubaea torallyi,Parajubaea,Arecaceae,Arecales,monocots,monocots,angiosperm
+Per_acu,Pereskia aculeata,Pereskia aculeata,Pereskia,Cactaceae,Caryophyllales,rosids,rosids,angiosperm
+Peu_bol,Peumus boldus,Peumus boldus,Peumus,Monimiaceae,Laurales,basal angiosperms,magnoliids,angiosperm
+Phi_lat,Phillyrea latifolia,Phillyrea latifolia,Phillyrea,Oleaceae,Lamiales,asterids,asterids,angiosperm
+Phi_var,Philodendron variifolium,Philodendron variifolium,Philodendron,Araceae,Alismatales,monocots,monocots,angiosperm
+Phy_pur,Phyllanthus purpusii,Phyllanthus purpusii,Phyllanthus,Phyllanthaceae,Malpighiales,rosids,rosids,angiosperm
+Pit_vir,Pittosporum viridiflorum,Pittosporum viridiflorum,Pittosporum,Pittosporaceae,Apiales,asterids,asterids,angiosperm
+Pla_ori,Platanus orientalis,Platanus orientalis,Platanus,Platanaceae,Proteales,basal eudicots,basal eudicots,angiosperm
+Pol_cor,Rhinotropis cornuta,Rhinotropis cornuta,Rhinotropis,Polygalaceae,Fabales,rosids,rosids,angiosperm
+Pol_cri,Pollia crispata,Pollia crispata,Pollia,Commelinaceae,Commelinales,monocots,monocots,angiosperm
+Pol_vir,Persicaria virginiana,Persicaria virginiana,Persicaria,Polygonaceae,Caryophyllales,rosids,rosids,angiosperm
+Pro_hoo,Prosartes hookeri,Prosartes hookeri,Prosartes,Liliaceae,Liliales,monocots,monocots,angiosperm
+Pte_esc,Pteridium esculentum,Pteridium esculentum,Pteridium,Dennstaedtiaceae,Polypodiales,ferns,ferns,fern
+Puy_alp,Puya alpestris,Puya alpestris,Puya,Bromeliaceae,Commelinales,monocots,monocots,angiosperm
+Qui_sap,Quillaja saponaria,Quillaja saponaria,Quillaja,Quillajaceae,Fabales,rosids,rosids,angiosperm
+Ran_lae,Randia laetevirens,Randia laetevirens,Randia,Rubiaceae,Gentianales,asterids,asterids,angiosperm
+Res_lut,Reseda luteola,Reseda luteola,Reseda,Resedaceae,Brassicales,rosids,rosids,angiosperm
+Rha_pir,Rhamnus pirifolia,Rhamnus pirifolia,Rhamnus,Rhamnaceae,Rosales,rosids,rosids,angiosperm
+Rib_vib,Ribes viburnifolium,Ribes viburnifolium,Ribes,Grossulariaceae,Saxifragales,basal eudicots,basal eudicots,angiosperm
+Rom_cou,Romneya coulteri,Romneya coulteri,Romneya,Papaveraceae,Ranunculales,basal eudicots,basal eudicots,angiosperm
+Rub_odo,Rubus odoratus,Rubus odoratus,Rubus,Rosaceae,Rosales,rosids,rosids,angiosperm
+Rub_tin,Rubia tinctorum,Rubia tinctorum,Rubia,Rubiaceae,Gentianales,asterids,asterids,angiosperm
+Sag_lat,Sagittaria latifolia,Sagittaria latifolia,Sagittaria,Alismataceae,Alismatales,monocots,monocots,angiosperm
+Sal_sco,Salix scouleriana,Salix scouleriana,Salix,Salicaceae,Malpighiales,rosids,rosids,angiosperm
+Sam_nig,Sambucus nigra,Sambucus nigra,Sambucus,Adoxaceae,Dipsacales,asterids,asterids,angiosperm
+Sau_cer,Saururus cernuus,Saururus cernuus,Saururus,Saururaceae,Piperales,basal angiosperms,magnoliids,angiosperm
+Sau_mad,Saurauia madrensis,Saurauia madrensis,Saurauia,Actinidiaceae,Ericales,asterids,asterids,angiosperm
+Sch_pol,Schinus polygama,Schinus polygama,Schinus,Anacardiaceae,Sapindales,rosids,rosids,angiosperm
+Sim_chi,Simmondsia chinensis,Simmondsia chinensis,Simmondsia,Simmondsiaceae,Caryophyllales,rosids,rosids,angiosperm
+Smi_his,Smilax tamnoides,Smilax tamnoides,Smilax,Smilacaceae,Liliales,monocots,monocots,angiosperm
+Sol_lig,Solanum ligustrinum,Solanum ligustrinum,Solanum,Solanaceae,Solanales,asterids,asterids,angiosperm
+Sta_chi,Stachyurus chinensis,Stachyurus chinensis,Stachyurus,Stachyuraceae,Crossosomatales,rosids,rosids,angiosperm
+Tas_lan,Tasmannia lanceolata,Tasmannia lanceolata,Tasmannia,Winteraceae,Canellales,basal angiosperms,magnoliids,angiosperm
+Tec_spe,Tecomanthe speciosa,Tecomanthe speciosa,Tecomanthe,Bignoniaceae,Lamiales,asterids,asterids,angiosperm
+Tod_bar,Todea barbara,Todea barbara,Todea,Osmundaceae,Osmundales,ferns,ferns,fern
+Tri_lan,Trichostema lanatum,Trichostema lanatum,Trichostema,Lamiaceae,Lamiales,asterids,asterids,angiosperm
+Tro_ara,Trochodendron aralioides,Trochodendron aralioides,Trochodendron,Trochodendraceae,Trochodendrales,basal eudicots,basal eudicots,angiosperm
+Ure_car,Urera caracasana,Urera caracasana,Urera,Urticaceae,Rosales,rosids,rosids,angiosperm
+Vio_gla,Viola glabella,Viola glabella,Viola,Violaceae,Malpighiales,rosids,rosids,angiosperm
