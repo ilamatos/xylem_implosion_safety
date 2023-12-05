@@ -1060,20 +1060,22 @@ pairwise.wilcox.test(dt_order$Pcri2_up, dt_order$vein_order, p.adjust.method = "
 
 # Trade-offs - PCA # --------------
 # Prepare data for PCA
-dt_m<- dt%>% group_by (spp_code)%>%
+dt_m<- dt%>% group_by (Species_name)%>%
   summarise(TD_m = median (TD, na.rm=T),
             LMA_m = median(LMA, na.rm = T),
             Kmax_m = median(Kmax, na.rm = T),
             e_m = median(e, na.rm = T),
-            clade = unique(clade))%>%
+            VTotV_m = median(VTotV, na.rm = T),
+            clade = unique(Clade))%>%
   na.omit(e_m)%>% # removing species with missing elasticity data
+  na.omit(TotV_m)%>% # removing species with missing total vlume of veins
   ungroup()%>%
-  dplyr::select(TD_m, LMA_m, Kmax_m, e_m, clade)
+  dplyr::select(TD_m, LMA_m, Kmax_m, e_m, VTotV_m, clade)
 
 glimpse(dt_m)
 
 # Run PCA
-pca1 <- prcomp(dt_m[,-5],center=TRUE,scale=TRUE) # z-transforming variables prior to the PCA
+pca1 <- prcomp(dt_m[,-6],center=TRUE,scale=TRUE) # z-transforming variables prior to the PCA
 pca1
 
 # variance explained
@@ -1112,7 +1114,7 @@ pca_plot<-ggplot(dt_pca,
   geom_point(alpha=0.7, size = 3)+
   stat_ellipse() + 
   geom_segment(data=pca_rotations,aes(x=x0,y=y0,xend=scale_factor*PC1,yend=scale_factor*PC2),inherit.aes = FALSE,size=0.8,color='black') +
-  geom_text(data=pca_rotations,aes(x=scale_factor*PC1-0.2,y=scale_factor*PC2-0.1,label=c("implosion safety", "cost","efficiency", "support")),inherit.aes = FALSE,size=5,color='black') +  
+  geom_text(data=pca_rotations,aes(x=scale_factor*PC1-0.2,y=scale_factor*PC2-0.1,label=c("implosion safety", "cost (LMA)","efficiency", "support", "cost (VTotV)")),inherit.aes = FALSE,size=5,color='black') +  
   theme_bw() +
   xlab(sprintf("PC1 (%.2f%%)",varexp[1])) +
   ylab(sprintf("PC2 (%.2f%%)",varexp[2])) +
@@ -1134,6 +1136,9 @@ lm2<- lm(TD_m ~ e_m, data = dt_m)
 summary(lm2)
 lm3<- lm(TD_m ~ LMA_m, data = dt_m)
 summary(lm3)
+lm4<- lm(TD_m ~ VTotV_m, data = dt_m)
+summary(lm4)
+
 # Figure 6 ----------------------
 glimpse(dt_m)
 dt_m$clade <- factor(dt_m$clade, levels = c("ferns", "basal angiosperms", "monocots", "basal eudicots", "rosids", "asterids"))
@@ -1180,9 +1185,23 @@ fig6c<-ggplot(data = dt_m, aes(x = LMA_m, y = TD_m))+
        y = "Implosion safety \n T/D", col = "Clades")+
   theme_classic(); fig6c
 
-Fig6<- ggarrange(fig6a, fig6b, fig6c, 
-                 ncol =3, nrow=1, common.legend = T,
-                 labels = c("(a)", "(b)", "(c)"),
+fig6d<-ggplot(data = dt_m, aes(x = LMA_m, y = VTotV_m))+
+  geom_point(aes(col = clade), size = 3, alpha =0.7)+
+  geom_smooth (method = "lm", col = "black")+
+  stat_cor(label.x = 0, label.y = 0.9)+
+  scale_color_manual(values = c("asterids"="#D55E00",# dark orange
+                                "rosids"="#CC79A7", # pink
+                                "basal angiosperms" = "#56B4E9",# blue
+                                "monocots" = "#009E73",# green
+                                "basal eudicots" = "#F0E442",#yellow
+                                "ferns" = "#999999"))+
+  labs(x = "Cost \n VTotV (mm3 mm-2)",
+       y = "Implosion safety \n T/D", col = "Clades")+
+  theme_classic(); fig6d
+
+Fig6<- ggarrange(fig6a, fig6b, fig6c, fig6d,
+                 ncol =2, nrow=2, common.legend = T,
+                 labels = c("(a)", "(b)", "(c)", "(d)",
                  legend = "bottom")
 Fig6
 ggsave(Fig6,filename="figures/Figure_6.png", width = 23, height = 9, limitsize = FALSE, units = "cm")
