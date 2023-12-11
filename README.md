@@ -87,7 +87,7 @@ Specifically we asked:
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/xylem_implosion_safety">
-    <img src="figures/Figure_1.png" alt="Logo" width="2000" height="700">
+    <img src="figures/Figure_1.png" alt="Logo" width="2000" height="500">
   </a>
 
 <h3 align="left">Figure 1</h3>
