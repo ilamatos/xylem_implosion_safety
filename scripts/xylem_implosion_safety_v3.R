@@ -391,6 +391,10 @@ plot(m2, which = "residual")
 abline(a = 0, b = 0)
 # QQ plot
 plot(m2, which = "qq") 
+
+# test for differences in intercepts across species
+m2y<-sma(log_Thickness ~ log_Diameter+spp_code, data = dt, robust = T)
+
 # Figure S5 # ---------------------
 
 # plot results  for each species with ggplot
@@ -613,6 +617,9 @@ plot(m3, which = "qq")
 # comparing slopes across clades 
 multcompmatrix(m3)
 
+# test for differences in intercepts across species
+m3y<-sma(log_Thickness ~ log_Diameter+clade, data = dt, robust = T)
+
 # sma4 - habitas #----------------
 # test for differences across species habitats
 # divide climate data into categorical bins: arid, mesic and hydric
@@ -644,6 +651,9 @@ plot(m4, which = "qq")
 # comparing across species habitats 
 multcompmatrix(m4)
 
+# test for differences in intercepts across species
+m4y<-sma(log_Thickness ~ log_Diameter+ppt_binned, data = dt_ppt1, robust = T)
+
 # sma5 - growth forms # -----------
 # test for differences across growth forms
 glimpse(dt)
@@ -667,6 +677,10 @@ plot(m5, which = "qq")
 
 # comparing across growth forms
 multcompmatrix(m5)
+
+# test for differences in intercepts across species
+m5y<-sma(log_Thickness ~ log_Diameter+growth_form, data = dt, robust = T)
+
 # sma6 - vein orders # ------------
 # test for differences across vein orders 
 # filtering out samples with NA values in vein orders
@@ -687,6 +701,9 @@ plot(m6, which = "qq")
 
 # comparing across vein orders
 multcompmatrix(m6)
+
+# test for differences in intercepts across species
+m6y<-sma(log_Thickness ~ log_Diameter+vein_order, data = dt, robust = T)
 
 # Figure 4 # ----------------------
 # plot T x D scaling for each clade 
